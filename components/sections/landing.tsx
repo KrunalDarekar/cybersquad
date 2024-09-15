@@ -1,18 +1,10 @@
-"use client"
-
-import { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import Link from "next/link"
-import { Menu, X } from 'lucide-react'
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar'
 
 export default function CybersquadLayout() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
@@ -45,7 +37,7 @@ export default function CybersquadLayout() {
             {[1, 2].map((i) => (
               <Card key={i}>
                 <CardContent className="pt-6">
-                  <p className="italic">"Cybersquad provided excellent security solutions for our company."</p>
+                  <p className="italic">&quot;Cybersquad provided excellent security solutions for our company.&quot;</p>
                   <p className="mt-4 font-semibold">- Client {i}</p>
                 </CardContent>
               </Card>
